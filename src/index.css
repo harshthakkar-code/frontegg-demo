@@ -1,0 +1,147 @@
+/* Base styles */
+.App {
+  text-align: center;
+}
+
+/* Styles for not authenticated state */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Change the background color as needed */
+}
+
+.login-box {
+  text-align: center;
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 100px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+}
+
+.login-button,
+.signup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button {
+  background-color: #28a745; /* Different color for Sign Up button */
+}
+
+.login-button:hover,
+.signup-button:hover {
+  opacity: 0.8;
+}
+
+.login-button:focus,
+.signup-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(130, 138, 145, 0.4);
+}
+
+/* Styles for authenticated state */
+.authenticated-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  height: 50px; /* Adjust height as necessary */
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  opacity: 0.8;
+}
+
+.logout-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.4);
+}
+
+/* User information styles */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info .profile-picture {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.user-info .user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Actions styles */
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions .action-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.actions .action-button:hover {
+  opacity: 0.8;
+}
+
+.actions .action-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
